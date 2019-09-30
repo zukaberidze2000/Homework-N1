@@ -1,22 +1,24 @@
 package com.company;
+import java.util.Scanner;
 
-public class gantoleba {
-    public static void main(String []args)
-    {
-        double a = 1.1f;
-        double b = 2.2f;
-        double c = 3.3f;
-        double D;
+public class input {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        double a, b, c, D;
+        System.out.println("enter a, b, c.");
+
+        // input
+        a = obj.nextDouble();
+        b = obj.nextDouble();
+        c = obj.nextDouble();
+
+        // calculation
         D = (b*b)-(4*(a*c)) ;
-        if (D < 0)
-            System.out.println("does not have answer");
-        else {
-            if (D == 0) {
-                System.out.println("has two answer");
-            } else {
-                System.out.println("has one answer");
-            }
+        double x1 = (b*b) + (4*(a*c));
+        double x2 = (b*b) + (4*(a*c));
 
-        }
+        System.out.println("x1 = " + x1);
+        System.out.println("x2 = " + x2);
+
     }
 }
