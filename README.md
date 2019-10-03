@@ -1,8 +1,10 @@
 package com.company;
 import java.util.Scanner;
 
-public class input {
-    public static void main(String[] args) {
+public class input 
+{
+    public static void main(String[] args) 
+    {
         Scanner obj = new Scanner(System.in);
         double a, b, c, D;
         System.out.println("enter a, b, c.");
